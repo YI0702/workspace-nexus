@@ -259,6 +259,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .deliv-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
 .deliv-desc { font-size: 12px; color: var(--hub-text-sub); }
 
+.resource-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+}
+.resource-card {
+  display: block; padding: 18px 20px;
+  background: var(--hub-card); border: 1px solid var(--hub-border);
+  border-radius: 10px; transition: all 0.15s;
+  text-decoration: none; color: inherit;
+  position: relative;
+}
+.resource-card:hover {
+  border-color: var(--hub-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.resource-base { border-left: 4px solid #2b6cb0; }
+.resource-review { border-left: 4px solid #38a169; }
+.rc-icon { font-size: 26px; margin-bottom: 8px; }
+.rc-name { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: var(--hub-text); }
+.rc-desc { font-size: 13px; color: var(--hub-text-sub); line-height: 1.6; margin-bottom: 8px; }
+.rc-tag {
+  font-size: 11px; color: var(--hub-text-light);
+  padding: 4px 8px; background: #f7fafc; border-radius: 4px;
+  display: inline-block;
+}
+
 .tool-table { width: 100%; border-collapse: collapse; }
 .tool-table th, .tool-table td {
   padding: 10px 14px; font-size: 13px; text-align: left;
